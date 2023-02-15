@@ -4,7 +4,7 @@ import { UpdatePersonalDataDto } from './dto/update-personal.dto';
 import { PersonalDataService } from './personal-data.service';
 import { PersonalData } from './schemas/personal-data.schema';
 
-@Controller('jobseeker')
+@Controller('jobseeker/Personal-Data')
 export class PersonalDataController {
     constructor(private personalservices: PersonalDataService) { }
 
