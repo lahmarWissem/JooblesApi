@@ -1,5 +1,5 @@
 
-export class UpdatePersonalDataDto {
+export interface UpdatePersonalDataDto {
     readonly Name: string;
     readonly FirstName : string;
     readonly Gender : string;

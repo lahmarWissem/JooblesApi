@@ -1,4 +1,4 @@
-export class CreateProfessionalExperienceDto {
+export interface CreateProfessionalExperienceDto {
     readonly CurrentJob: boolean;
     readonly Period: Date;
     readonly Until: Date;
@@ -12,5 +12,5 @@ export class CreateProfessionalExperienceDto {
     readonly ManagementPosition: boolean;
     readonly MonthlyNetSalary: number;
     readonly TasksAndMissions: string;
-    // this is wheen u stoped mate complete the dto tommorow and
+    // this is wheen u stoped mate complete the dto tommorow and good luck cowboy.
 }

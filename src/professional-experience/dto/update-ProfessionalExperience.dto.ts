@@ -1,4 +1,4 @@
-export class UpdateProfessionalExperienceDto {
+export interface UpdateProfessionalExperienceDto {
     readonly CurrentJob: boolean;
     readonly Period: Date;
     readonly Until: Date;

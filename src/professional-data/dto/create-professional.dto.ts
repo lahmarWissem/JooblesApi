@@ -1,5 +1,5 @@
 
-export class CreateProfessionalDataDto {
+export interface CreateProfessionalDataDto {
     readonly Title: string;
     readonly LevelOfEducation: string;
     readonly LevelOfExperience: string;

@@ -1,6 +1,6 @@
 
 
-export class CreatePersonalDataDto {
+export interface CreatePersonalDataDto {
    readonly Name: string;
    readonly FirstName : string;
    readonly Gender : string;
