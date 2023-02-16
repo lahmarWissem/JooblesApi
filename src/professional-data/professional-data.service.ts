@@ -1,13 +1,14 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
-import { PersonalData } from 'src/personal-data/schemas/personal-data.schema';
 import { ProfessionalData } from './schemas/professional-data.schemas';
+
 
 @Injectable()
 export class ProfessionalDataService {
     constructor(@InjectModel(ProfessionalData.name)
     private proModel: mongoose.Model<ProfessionalData>) { }
+   
     async findAll(): Promise<ProfessionalData[]> {
         const prodata = await this.proModel.find();
         return prodata;

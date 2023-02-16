@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
-import { CreateProfessionalDataDto } from './dto/create-professional.to';
-import { UpdateProfessionalDataDto } from './dto/update-professional.to';
+import { CreateProfessionalDataDto } from './dto/create-professional.dto';
+import { UpdateProfessionalDataDto } from './dto/update-professional.dto';
 import { ProfessionalDataService } from './professional-data.service';
 import { ProfessionalData } from './schemas/professional-data.schemas';
 

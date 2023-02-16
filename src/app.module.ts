@@ -6,6 +6,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PersonalDataModule } from './personal-data/personal-data.module';
 import { ProfessionalDataModule } from './professional-data/professional-data.module';
+import { ProfessionalExperienceModule } from './professional-experience/professional-experience.module';
 
 @Module({
   imports: [
@@ -13,9 +14,11 @@ import { ProfessionalDataModule } from './professional-data/professional-data.mo
       envFilePath: '.env',
       isGlobal: true,
     }),
-     PersonalDataModule,
+    PersonalDataModule,
     MongooseModule.forRoot(process.env.DB_URI),
-    ProfessionalDataModule],
+    ProfessionalDataModule,
+    ProfessionalExperienceModule,
+    ],
   controllers: [AppController],
   providers: [AppService],
 })
